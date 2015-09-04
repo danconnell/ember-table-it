@@ -3,5 +3,7 @@
   {{row-it rows=rows columns=columns}}
 </table>
 
-{{pagination-pager count=totalPages current=1 change="setPage"}} 
-<span class='total-records'>| Found total {{totalRecords}} records</span>
+<div class='table-footer'>
+  {{pagination-pager count=totalPages current=1 change="setPage"}} 
+  <span class='total-records'>Found total {{totalRecords}} records</span>
+</div>
