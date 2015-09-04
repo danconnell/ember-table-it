@@ -17,7 +17,7 @@ export default Ember.Component.extend({
     } else {
       return 0;
     }
-  },
+  }.property('rows.content'),
 
   actions: {
     setPage: function(current) {
